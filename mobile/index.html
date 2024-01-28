@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop 289 - Mobile</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/myStyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../images/dthoai.png" type="image/png">
+</head>
+
+<body>
+    <!-- Tiêu đề trang -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container"id="thCuahang"> </div>
+    </div>
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="../home/">Shop 289</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <!-- <i class="fa fa-apple" aria-hidden="true"></i> -->
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../home/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../about/">About</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="javaScript:void(0)" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Products
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="../tivi/">Tivi</a>
+                        <a class="dropdown-item" href=".">Mobile</a>
+                        <a class="dropdown-item" href="../food/">Food</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../contact/">Contact</a>
+                </li>
+            </ul>
+            <!-- <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
+            <form class="d-flex">
+                <button class="btn btn-sm btn-outline-light" type="button" onclick="openCart()">
+                    <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                    <span class="badge bg-white text-dark ms-1 rounded-pill" id="Th_Gio_hang">0</span>
+                </button>
+            </form>
+        </div>
+    </nav>
+    <!-- Nội dung Điện Thoại -->
+    <div class="container-fluid">
+        <div class="row mt-2 mb-2">
+            <div class="col-12 col-md-3 col-xl-3">
+                <h4>Mobile</h4>        
+            </div>
+            <div class="col-12 col-md-9 col-xl-9 pt-1">
+                <button class="btn btn-sm btn-outline-primary" onclick="sapXepGia(this)" sort="1" >Giá &Uparrow;</button>
+                <button class="btn btn-sm btn-outline-primary" onclick="sapXepTen(this)" sort="1">Tên &Uparrow;</button>
+
+                <input type="text" onkeyup="timTheoTen(event)" style="border: none; border-bottom: 1px solid black; width: 20rem; font-size:small; padding: 4px;" placeholder="Search">
+                <button class="btn btn-sm btn-outline-primary">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+
+                <input type="range" name="" onchange="xuatMobiletheoGia(this)" id="thLocGia" min="1000" max="10000" style="width:25rem ;" value="1000" step="1000">
+                <label for="locGia" id="lblLocgia">1000<sup>đ</sup></label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-3 col-xl-3">
+                <h5 class="text-white bg-dark p-2">Nhà Sản xuất</h5>
+                <ul class="list-group mb-4" id="thNhom"></ul>
+                <h5 class="text-white bg-dark p-2">Sản phẩm Bán chạy</h5>
+                <div id="thQuangcao"></div>
+            </div>
+            <div class="col-12 col-md-9 col-xl-9">
+                <div class="row" id="thDienThoai"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 footer lead">
+                Designer Khóa 289 - Trung Tâm Tin Học - 2023
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../libs/api.js"></script>
+    <script src="../libs/cuahang.js"></script>
+    <script src="../libs/cart.js"></script>
+    <script src="../libs/mobile.js"></script>
+    <script src="../libs/lib.js"></script>
+    <script src="../libs/modal.js"></script>
+</body>
+
+</html>

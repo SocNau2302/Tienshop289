@@ -1,0 +1,51 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.jumbotron {
+    background-color: teal;
+    color: whitesmoke;
+    margin-bottom: 0rem;
+}
+.card-footer{
+    background-color: transparent;
+    border-top: none;
+}
+.footer{
+    background-color: teal;
+    color: whitesmoke;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+.card:hover{
+    border: 2px double black;
+}
+
+.table tr td{
+    vertical-align: middle;
+}
+
+input[type="number"]{
+    text-align: right;
+}
+
+/* #thNhom li a {
+    color: blue !important;
+}
+
+#thNhom li.active a {
+    color: white !important;
+} */
+
+#thNhom a {
+    text-decoration: none;
+}
+.activeLstTivi{
+    background-color: whitesmoke;
+}
+
+.list-group-item a{
+    color: black !important;
+    opacity: .8;
+}

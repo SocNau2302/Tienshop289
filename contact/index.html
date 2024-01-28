@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop 289 - Home</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/myStyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Tiêu đề trang -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container" id="thCuahang"></div>
+    </div>
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href=".">Shop 289</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <!-- <i class="fa fa-apple" aria-hidden="true"></i> -->
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href=".">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../about/">About</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="javaScript:void(0)" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Products
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="../tivi/">Tivi</a>
+                        <a class="dropdown-item" href="../mobile/">Mobile</a>
+                        <a class="dropdown-item" href="../food/">Food</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href=".">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Nội dung Contact -->
+    <div class="container">
+        <h4>Contact</h4>
+        <div class="row">
+            <div class="col-12 col-md-5 col-xl-5">
+                <div class="form-group">
+                    <label for="">Tiêu đề</label>
+                    <input type="text" name="" class="form-control" id="thTieude" placeholder="Tiêu đề">
+                </div>
+                <div class="form-group">
+                    <label for="">Họ tên</label>
+                    <input type="text" name="" class="form-control" id="thHoten" placeholder="Họ tên">
+                </div>
+                <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="text" name="" class="form-control" id="thEmail" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="">Điện thoại</label>
+                    <input type="text" name="" class="form-control" id="thDienthoai" placeholder="Điện thoại">
+                </div>
+                <div class="form-group">
+                    <label for="">Nội dung</label>
+                    <textarea name="" class="form-control" id="thNoidung" placeholder="Nội dung"></textarea>
+                </div>
+                <div class="form-group text-right">
+                    <button class="btn btn-sm btn-outline-info" onclick="window.history.back()">Bỏ qua</button>
+                    <button class="btn btn-sm btn-outline-success" onclick="sendContact()">Liên hệ</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-7 col-xl-7">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6357945176674!2d106.67975127590587!3d10.762526859448194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f1c06f4e1dd%3A0x43900f1d4539a3d!2sUniversity%20of%20Science%20-%20VNUHCM!5e0!3m2!1sen!2s!4v1704281045135!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        
+    </div>
+    
+    <!-- footer -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 footer lead">
+                Designer Khóa 289 - Trung Tâm Tin Học - 2023
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+
+    <script src="../libs/api.js"></script>
+    <script src="../libs/cuahang.js"></script>
+    <script src="../ckeditor/ckeditor.js"></script>
+    <script src="../libs/contact.js"></script>
+    
+    
+</body>
+
+</html>
